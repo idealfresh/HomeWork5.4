@@ -6,20 +6,20 @@ public class Main {
 		Scanner scan = new Scanner(System.in);	
 
 		System.out.println("Input two number: ");
-		int a = scan.nextInt();
-		int b = scan.nextInt();
-		int fa = 1;
+		int N = scan.nextInt();
+		int K = scan.nextInt();
+		int aN = 1;
+		int aK=1;
 		
-		for(int i=1;i<=a; i++){
-			fa=fa*i;
+		for(int i=1;i<=N; i++){
+			aN=aN*i;
 		}
-		int fb=1;
-		
-		for(int i=1;i<=b;i++){
-			fb=fb*i;
+			
+		for(int i=1;i<=K;i++){
+			aK=aK*i;
 			
 		}
-		System.out.println((double)fa/(double)fb);
+		System.out.println((double)aN/(double)aK);
 		
 	}
 	
