@@ -3,24 +3,39 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		//Ќапишете програма, ко€то пресм€та N!*K!/(N-K)! за дадени N и K. *
+
+
 		Scanner scan = new Scanner(System.in);	
 
-		System.out.println("Input two number: ");
 		int N = scan.nextInt();
 		int K = scan.nextInt();
+		
 		int aN = 1;
+		
+		for(int i=1;i<=N;i++){
+			
+		aN=aN*i;
+		
+		}
+		
 		int aK=1;
 		
-		for(int i=1;i<=N; i++){
-			aN=aN*i;
-		}
+		for(int i =1 ; i<=K; i++){
 			
-		for(int i=1;i<=K;i++){
 			aK=aK*i;
 			
 		}
-		System.out.println((double)aN/(double)aK);
+		int X=(N-K);
+		for(int i=1; i<=(N-K); i++){
+			X=X*i;
+			
+			
+		}
 		
-	}
-	
+		System.out.println((double) aN*aK/(double)X);
+			
+			
+		}
+
 }
